@@ -34,19 +34,23 @@ const handleFavorite = joke => {
   console.log(JSON.parse(localStorage.getItem('favorite')))
 }
 
-const buttonAnother = styled.button`
-  padding: 12px;
-  background-color: pink;
-  width:50px;
-  height:50px;
-`
+
 return (
     <div className='App'>
       <Joke joke={joke} />
-      <buttonAnother onClick={() => fetchJoke()}>another one</buttonAnother>
-      <button onClick={() => handleFavorite(joke)}> add to favorite</button>
+      <AnotherButton onClick={() => fetchJoke()}> Another one </AnotherButton>
+      <FavButton onClick={() => handleFavorite(joke)}> Add to favorite</FavButton>
     </div>
 )}
 
-
+const AnotherButton = styled.button`
+  background-color: pink;
+  width:100px;
+  height:50px;
+`
+const FavButton = styled.button`
+  background-color: pink;
+  height:50px;
+  margin-left: 50%;
+`
 export default App

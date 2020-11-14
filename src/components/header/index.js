@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
 
-
-
 const HeaderLogout = () => {
 const history = useHistory()
 const isToken = localStorage.getItem('token')
@@ -12,7 +10,6 @@ const handleLogout = () => {
     history.push('/')
   }
  
-
   return (
     <Container>
       {isToken ? (
@@ -24,11 +21,13 @@ const handleLogout = () => {
   )
 }
 
-const LogoutButton = styled.button`
+const LogoutButton = styled.button
+`
   padding: 12px;
   background-color: pink;
 `
-const Container = styled.div`
+const Container = styled.div
+`
   background-color: grey;
 `
 

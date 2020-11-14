@@ -5,6 +5,7 @@ import Login from '../pages/login'
 import Joke from '../pages/joke'
 import Favorite from '../pages/favorite'
 import Header from '../components/header'
+import PrivateRoute from '../utils/privateRoute'
 
 const Routes = () => {
   return (
@@ -12,7 +13,7 @@ const Routes = () => {
        <Header></Header>
         <Switch>
           <Route exact path='/' component={Login} />
-          <Route path='/joke' component={Joke} />
+          <PrivateRoute path='/joke' component={Joke} />
           <Route path='/favorite' component={Favorite} />
           <Redirect to='/'></Redirect>
         </Switch>

@@ -19,7 +19,8 @@ const Signin = ({submit }) => {
         </StyledForm>
     )
 }
-const StyledSpan = styled.span`
+const StyledSpan = styled.span
+`
     color: pink;
     padding : 40px;
     height: 10px;
@@ -28,7 +29,8 @@ const StyledSpan = styled.span`
 
 ` 
 
-const StyledForm = styled.form`
+const StyledForm = styled.form
+`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +38,8 @@ const StyledForm = styled.form`
     background :white
 `
 
-const SigninInput = styled.input`
+const SigninInput = styled.input
+`
     margin: 20px;
     border-radius: 20px;
     border: none;
@@ -46,8 +49,6 @@ const SigninInput = styled.input`
     color: grey;
     padding: 5px;
     text-align: center;
-    
-
 `
 
 export default Signin
