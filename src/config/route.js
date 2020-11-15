@@ -14,7 +14,7 @@ const Routes = () => {
         <Switch>
           <Route exact path='/' component={Login} />
           <PrivateRoute path='/joke' component={Joke} />
-          <Route path='/favorite' component={Favorite} />
+          <PrivateRoute path='/favorite' component={Favorite} />
           <Redirect to='/'></Redirect>
         </Switch>
     </BrowserRouter>

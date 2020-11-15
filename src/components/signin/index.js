@@ -24,9 +24,8 @@ const StyledSpan = styled.span
     color: pink;
     padding : 40px;
     height: 10px;
-    width : 200px;
+    width : 250px;
     text-align: center;
-
 ` 
 
 const StyledForm = styled.form

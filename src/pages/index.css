@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant|Overpass");
 
 body {
-  background: linear-gradient(to right, #40e0d0, #1bbfaf);
+  background: linear-gradient(to left, #EACFDF, #1bbfaf);
   font-family: "Overpass";
   padding-top: 50px;
   position: relative;

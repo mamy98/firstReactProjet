@@ -9,26 +9,39 @@ const handleLogout = () => {
   localStorage.removeItem('token')
     history.push('/')
   }
- 
+const handleFav = () => {
+  history.push('/favorite')
+}
   return (
     <Container>
+      <FavButton onClick={handleFav}>Favorite</FavButton>
       {isToken ? (
       <LogoutButton onClick={handleLogout}>Logout</LogoutButton>
-      ) : (
-        <button>Logout</button>
-      )}
+      ) : null }
     </Container>   
   )
 }
 
 const LogoutButton = styled.button
 `
-  padding: 12px;
+  margin-left: 320px;
   background-color: pink;
+  width: 100px;
+  height: 60px;
+`
+const FavButton = styled.button
+`
+  background-color: pink;
+  padding: 5px;
+  width: 100px;
+  height: 60px;
+  margin-left: 15px;
 `
 const Container = styled.div
 `
-  background-color: grey;
+  background-color: white;
+  height: 60px;
+
 `
 
 export default HeaderLogout

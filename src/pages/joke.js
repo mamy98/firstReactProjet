@@ -51,6 +51,6 @@ const AnotherButton = styled.button`
 const FavButton = styled.button`
   background-color: pink;
   height:50px;
-  margin-left: 50%;
+  margin-left: 55%;
 `
 export default App

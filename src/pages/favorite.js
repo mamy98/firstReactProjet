@@ -10,11 +10,11 @@ const Favorite = () => {
   })
   return (
     <div>
-      <p>Favorite</p>
       {fav.map(f=>{
         console.log(f)
         return (
           <Joke joke={f} ></Joke>
+          
         )
       })}
     </div>
