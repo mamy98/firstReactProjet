@@ -11,6 +11,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
        <Header></Header>
+       <br></br>
         <Switch>
           <Route exact path='/' component={Login} />
           <PrivateRoute path='/joke' component={Joke} />

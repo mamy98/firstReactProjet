@@ -14,7 +14,6 @@ const Favorite = () => {
         console.log(f)
         return (
           <Joke joke={f} ></Joke>
-          
         )
       })}
     </div>

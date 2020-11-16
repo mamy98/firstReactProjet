@@ -14,7 +14,9 @@ const handleFav = () => {
 }
   return (
     <Container>
-      <FavButton onClick={handleFav}>Favorite</FavButton>
+      {isToken ? (
+        <FavButton onClick={handleFav}>Favorite</FavButton>
+      ) : null }
       {isToken ? (
       <LogoutButton onClick={handleLogout}>Logout</LogoutButton>
       ) : null }
@@ -28,19 +30,22 @@ const LogoutButton = styled.button
   background-color: pink;
   width: 100px;
   height: 60px;
+  border-radius: 20px;
 `
 const FavButton = styled.button
 `
-  background-color: pink;
+  background-color: transparent;
   padding: 5px;
   width: 100px;
   height: 60px;
   margin-left: 15px;
+  border-radius: 20px;
 `
 const Container = styled.div
 `
   background-color: white;
   height: 60px;
+  border-radius: 20px;
 
 `
 

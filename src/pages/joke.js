@@ -43,13 +43,17 @@ return (
     </div>
 )}
 
-const AnotherButton = styled.button`
+const AnotherButton = styled.button
+`
   background-color: pink;
   width:100px;
   height:50px;
+  border-radius: 20px;
 `
-const FavButton = styled.button`
-  background-color: pink;
+const FavButton = styled.button
+`
+  border-radius: 20px;
+  background-color: transparent;
   height:50px;
   margin-left: 55%;
 `

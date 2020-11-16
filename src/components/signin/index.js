@@ -34,7 +34,9 @@ const StyledForm = styled.form
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background :white
+    background :white;
+    border-radius: 20px;
+
 `
 
 const SigninInput = styled.input
