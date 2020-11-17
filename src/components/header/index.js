@@ -29,23 +29,31 @@ const LogoutButton = styled.button
   margin-left: 320px;
   background-color: pink;
   width: 100px;
-  height: 60px;
+  height: 40px;
   border-radius: 20px;
+  margin: 10px;
+  
 `
 const FavButton = styled.button
 `
   background-color: transparent;
-  padding: 5px;
-  width: 100px;
-  height: 60px;
+
+  height: 40px;
   margin-left: 15px;
   border-radius: 20px;
+  width: 100px;
+  margin-right: 55%;
+  
+
+
 `
 const Container = styled.div
 `
   background-color: white;
   height: 60px;
   border-radius: 20px;
+  justify-content: center
+  
 
 `
 

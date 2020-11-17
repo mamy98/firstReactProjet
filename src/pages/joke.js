@@ -47,14 +47,14 @@ const AnotherButton = styled.button
 `
   background-color: pink;
   width:100px;
-  height:50px;
+  height:40px;
   border-radius: 20px;
 `
 const FavButton = styled.button
 `
   border-radius: 20px;
   background-color: transparent;
-  height:50px;
+  height:40px;
   margin-left: 55%;
 `
 export default App
